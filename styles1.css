@@ -1,0 +1,165 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3e5f5; /* Lavender background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height on smaller screens */
+    border: 10px solid;
+    border-image: linear-gradient(to right, #f40273, #b54f7f);
+    border-image-slice: 1;
+    border-radius: 30px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Container for the content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: #fff; /* White background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    position: relative; /* Required for sparkle effect */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Sparkles (if any) */
+
+/* Heading styles */
+h1 {
+    margin-bottom: 20px;
+    color: #ff1493; /* Deep pink color */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5); /* Text shadow */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff1493; /* Deep pink color */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s;
+    box-shadow: 0px 0px 10px rgba(255, 105, 180, 0.3); /* Soft shadow */
+}
+
+button:hover {
+    background-color: #ff69b4; /* Lighter pink color on hover */
+}
+
+/* Language selection dropdown styles */
+#languageSelect {
+    margin-right: 20px;
+    padding: 10px;
+    border: 2px solid #ff1493; /* Pink border */
+    border-radius: 20px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+    font-size: 16px;
+}
+
+/* Output text styles */
+#outputText {
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+    padding: 15px;
+    border: 2px solid #ff1493; /* Pink border */
+    border-radius: 20px; /* Rounded corners */
+    width: 100%;
+    max-width: 600px; /* Maximum width */
+    min-height: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 105, 180, 0.3); /* Soft shadow */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Control container styles */
+#controls-container {
+    position: relative; /* Changed from absolute for responsiveness */
+    width: 100%;
+    max-width: 200px; /* Set the width of the left div */
+    height: auto; /* Adjust height as needed */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin-bottom: 20px;
+}
+
+.controls-container {
+    border: 2px solid pink;
+}
+
+/* Popup styles */
+#popup {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded corners */
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px rgba(255, 105, 180, 0.5); /* Soft shadow */
+}
+
+/* Input text styles */
+input[type="text"] {
+    background-color: #ffc0cb; /* Light pink */
+    color: #333; /* Dark text color */
+    border: 2px solid #ff1493; /* Pink border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+    width: calc(100% - 60px); /* Adjust width */
+    margin: 10px 0;
+    font-size: 16px; /* Set font size */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Label styles */
+label {
+    margin-bottom: 20px;
+    color: #ff1493; /* Deep pink color */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5); /* Text shadow */
+}
+
+/* Converter styles */
+.converter {
+    border: 2px solid pink;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    #controls-container {
+        max-width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    #outputText {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    input[type="text"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+<div class="container">
+    <div class="controls-container">
+        <h1>Text to speech converter</h1>
+    <input type="text" id="textInput" placeholder="Type here">
+    <button id="speakButton" onclick="speakText()">Speak</button>
+    </div>
+        
+    
+    
+   
+    
+    <div class="converter">
+        <h1>Speech to text converter</h1>
+        <label for="languageSelect">Select Language:</label>
+        <select id="languageSelect">
+            <option value="en-US">English (US)</option>
+            <option value="hi-IN">Hindi</option>
+            <option value="bn-IN">Bengali</option>
+            <option value="ta-IN">Tamil</option>
+            <option value="te-IN">Telugu</option>
+            <option value="kn-IN">Kannada</option> <!-- Kannada option -->
+            <!-- Add more options for other Indian languages -->
+        </select>
+    
+    <button id="startButton" onclick="startSpeechToText();">Start Recording</button>
+    <button id="stopButton" onclick="stopSpeechToText();">Stop Recording</button>
+    <p id="outputText"></p>
+    <div id="popup" style="display: none;"></div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
